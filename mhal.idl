@@ -1,0 +1,13 @@
+#ifndef _MHAL_IDL_
+#define _MHAL_IDL_
+
+module MHAL {
+
+	// TODO define interfaces and data types here
+	interface SampleInterface {
+	    string echo(in string msg);
+	};
+	
+};
+
+#endif
