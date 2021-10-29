@@ -19,4 +19,5 @@ else
     ./configure
   fi
   make
+  ./install
 fi
