@@ -1,5 +1,7 @@
 #!/bin/sh
 
+./install
+
 if [ "$1" = "clean" ]; then
   if [ -e Makefile ]; then
     make clean
@@ -17,8 +19,6 @@ else
   if [ ! -e configure ] || [ ! -e Makefile ] || [ configure.ac -nt Makefile ] || [ Makefile.am -nt Makefile ]; then
     ./reconf
     ./configure
-    ./install
   fi
   make
-  ./install
 fi
